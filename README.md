@@ -5,8 +5,8 @@
 The Contact Management System is a C# application that provides a basic framework for managing contact and country information. It utilizes ADO.NET to interact with a SQL Server database, allowing for CRUD (Create, Read, Update, Delete) operations on contact and country records.
 
 <div>
-  <img src="./img/MainScreen1.png" alt="Image 1" width="500" height="400" style="display: inline-block;"/>
-  <img src="./img/MainScreen2.png" alt="Image 2" width="500" height="400" style="display: inline-block;"/>
+  <img src="./img/MainScreen1.png" alt="Image 1" width="700" height="400" style="display: inline-block;"/>
+  <img src="./img/MainScreen2.png" alt="Image 2" width="700" height="400" style="display: inline-block;"/>
 </div>
 
 ## Project Structure

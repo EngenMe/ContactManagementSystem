@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EA6131F-90A8-414B-BFE8-4A092291B4B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinFrmContacts</RootNamespace>
+    <AssemblyName>WinFrmContacts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucDeleteContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDeleteContact.Designer.cs">
+      <DependentUpon>ucDeleteContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUpdateContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUpdateContact.Designer.cs">
+      <DependentUpon>ucUpdateContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucIntroScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucIntroScreen.Designer.cs">
+      <DependentUpon>ucIntroScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucContactsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucContactsList.Designer.cs">
+      <DependentUpon>ucContactsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddContact.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddContact.Designer.cs">
+      <DependentUpon>ucAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPrintContactCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPrintContactCard.Designer.cs">
+      <DependentUpon>ucPrintContactCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucDeleteContact.resx">
+      <DependentUpon>ucDeleteContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUpdateContact.resx">
+      <DependentUpon>ucUpdateContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucIntroScreen.resx">
+      <DependentUpon>ucIntroScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContactsList.resx">
+      <DependentUpon>ucContactsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddContact.resx">
+      <DependentUpon>ucAddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPrintContactCard.resx">
+      <DependentUpon>ucPrintContactCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{5ea1f0e2-2c3b-487b-9200-c3d224a6ace9}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

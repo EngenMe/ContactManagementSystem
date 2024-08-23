@@ -86,5 +86,5 @@ This project is licensed under the MIT License - see the **`[LICENSE](LICENSE)`*
 
 ## Acknowledgments
 
-**`[ADO.NET Documentation](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/)`**
-**`[SQL Server Documentation](https://docs.microsoft.com/en-us/sql/sql-server/)`**
+**[ADO.NET Documentation](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/)**
+**[SQL Server Documentation](https://docs.microsoft.com/en-us/sql/sql-server/)**
